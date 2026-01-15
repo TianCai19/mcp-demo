@@ -2,6 +2,8 @@
 
 一个完整的 Model Context Protocol (MCP) 示例项目，包含 Server 和 Client 的实现。
 
+**📚 文档站点**: https://mcp-demo-virid.vercel.app
+
 ## 项目概述
 
 本项目展示了如何使用 MCP 构建一个天气服务系统：
