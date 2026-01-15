@@ -43,3 +43,4 @@ test_*.py
 # Temporary files
 *.tmp
 *.bak
+.vercel

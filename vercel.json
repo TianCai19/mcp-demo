@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd docs-site && npm run build",
+  "outputDirectory": "docs-site/dist",
+  "installCommand": "cd docs-site && npm install"
+}
