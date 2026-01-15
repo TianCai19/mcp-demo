@@ -25,7 +25,7 @@ export default defineConfig({
 				{
 					label: '项目文档',
 					items: [
-						{ label: '项目介绍', link: '/index' },
+						{ label: '项目介绍', link: '/' },
 					],
 				},
 				{
