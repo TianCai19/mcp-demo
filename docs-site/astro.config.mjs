@@ -29,6 +29,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: '官方文档',
+					items: [
+						{ label: 'Claude MCP 官方文档', link: '/claude-mcp' },
+					],
+				},
+				{
 					label: '代码学习',
 					items: [
 						{ label: '代码逐行解析', link: '/code-explained' },
