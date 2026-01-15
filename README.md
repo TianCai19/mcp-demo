@@ -14,14 +14,20 @@
 ```
 mcp-demo/
 ├── weather/              # MCP Server
-│   ├── weather.py        # 服务器实现
+│   ├── weather.py                # 服务器实现
+│   ├── weather_commented.py      # 带详细中文注释的版本
+│   ├── CODE_EXPLAINED.md         # 代码逐行解析文档
+│   ├── TRANSPORT_EXPLAINED.md    # transport="stdio" 详细解释
+│   └── .venv/                    # 虚拟环境
+│
+├── mcp-client/           # MCP Client
+│   ├── client.py         # 交互式客户端
+│   ├── test_client.py    # 自动化测试脚本
+│   ├── .env              # API 配置
 │   └── .venv/            # 虚拟环境
 │
-└── mcp-client/           # MCP Client
-    ├── client.py         # 交互式客户端
-    ├── test_client.py    # 自动化测试脚本
-    ├── .env              # API 配置
-    └── .venv/            # 虚拟环境
+├── README.md             # 项目说明
+└── MCP_CLIENTS_SETUP.md  # 各客户端配置指南
 ```
 
 ## 功能特性
@@ -197,6 +203,50 @@ AI 生成自然语言回复
 - 添加缓存机制
 - 实现多 Server 连接
 - 添加 Web UI
+
+## 学习资源
+
+### 代码解析文档
+
+适合 Python 初学者的详细学习文档：
+
+- **[weather/CODE_EXPLAINED.md](weather/CODE_EXPLAINED.md)** - 代码逐行解析
+  - 每行代码的详细解释
+  - 关键概念讲解（异步、装饰器、类型注解等）
+  - 数据流图和常见问题
+
+- **[weather/weather_commented.py](weather/weather_commented.py)** - 带详细中文注释的代码
+  - 可以对照原始代码学习
+  - 每个 Python 概念都有解释
+
+- **[weather/TRANSPORT_EXPLAINED.md](weather/TRANSPORT_EXPLAINED.md)** - transport="stdio" 详解
+  - 什么是 stdin/stdout
+  - MCP 如何使用 stdio 通信
+  - 进程间通信原理
+
+### 配置指南
+
+- **[MCP_CLIENTS_SETUP.md](MCP_CLIENTS_SETUP.md)** - 各客户端配置方法
+  - Cherry Studio
+  - Claude Desktop
+  - VS Code Extensions (Cline, Continue)
+  - Cursor
+
+### 推荐学习路径
+
+```
+1. 阅读 README.md 了解项目概况
+   ↓
+2. 阅读 weather/CODE_EXPLAINED.md 理解代码
+   ↓
+3. 对照 weather_commented.py 学习代码实现
+   ↓
+4. 阅读 TRANSPORT_EXPLAINED.md 理解通信机制
+   ↓
+5. 运行项目并尝试修改代码
+   ↓
+6. 使用 MCP_CLIENTS_SETUP.md 配置其他客户端
+```
 
 ## 参考资源
 
