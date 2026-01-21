@@ -48,6 +48,12 @@ export default defineConfig({
 						{ label: '各客户端配置', link: '/clients-setup' },
 					],
 				},
+				{
+					label: '学习资源',
+					items: [
+						{ label: '学习资源', link: '/learning-resources' },
+					],
+				},
 			],
 			// 多语言配置
 			locales: {
